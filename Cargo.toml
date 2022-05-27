@@ -8,3 +8,4 @@ edition = "2021"
 [dependencies]
 curve25519-dalek-ng = "4.1"
 rand_core = "0.6.3"
+merlin = { version = "3.0.0", features = ["debug-transcript"]}
