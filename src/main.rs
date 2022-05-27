@@ -15,7 +15,7 @@ fn main() {
     // field_order, generator, secret_commit, random_commit
     transcript.append_message(
         b"generator",
-        &constants::ED25519_BASEPOINT_POINT.compress().to_bytes(),
+        &constants::RISTRETTO_BASEPOINT_POINT.compress().to_bytes(),
     );
 
     transcript.append_message(b"field order", &constants::BASEPOINT_ORDER.to_bytes());
